@@ -1,30 +1,49 @@
 header {
+  margin: 1em 0;
   color: $color-silver;
   lost-utility: clearfix;
-  margin: 1em 0;
+
   a {
-    text-decoration: none;
     color: inherit;
-    &:visited,
-    &:hover,
-    &:active {
+    text-decoration: none;
+    transition-duration: 0.1s;
+
+    &:visited {
       color: inherit;
     }
+
+    &:hover,
+    &:active {
+      color: $color-white;
+      transition-duration: 0.1s;
+    }
   }
+
   h1 {
     margin: 0;
+
+    a {
+      span {
+        color: $color-brandyRose;
+      }
+
+      &:hover,
+      &:active {
+        color: inherit;
+      }
+    }
   }
 
   .header__social {
     text-align: right;
 
+    a {
+      color: $color-brandyRose;
+    }
+
     .header__credits {
       font-size: 12px;
       margin-bottom: 0.2em;
-
-      a {
-        color: $color-silver;
-      }
 
       span {
         color: $color-brandyRose;

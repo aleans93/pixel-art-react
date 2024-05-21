@@ -64,7 +64,7 @@ module.exports = {
       filename: 'css/main.css',
     }),
     new HtmlWebpackPlugin({
-      template: './public/index.dev.html',
+      template: './public/index.html',
       inject: true,
     }),
     new webpack.DefinePlugin({
