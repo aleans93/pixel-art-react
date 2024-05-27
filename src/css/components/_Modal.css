@@ -32,6 +32,7 @@
       padding: 1em 0;
 
       label {
+        cursor: pointer;
         margin: 1em 0.5em;
         display: inline-block;
       }
