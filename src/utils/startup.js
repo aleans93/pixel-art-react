@@ -34,7 +34,7 @@ const initialSetup = (dispatch, storage) => {
     }
   } else {
     // If no data initialize storage
-    initStorage(storage);
+    // initStorage(storage);
   }
 };
 
