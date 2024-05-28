@@ -11,6 +11,7 @@ import KeyBindings from './KeyBindings';
 import CssDisplayContainer from './CssDisplay';
 import DurationContainer from './Duration';
 import EraserContainer from './Eraser';
+import PencilContainer from './Pencil';
 import BucketContainer from './Bucket';
 import MoveContainer from './Move';
 import EyedropperContainer from './Eyedropper';
@@ -25,6 +26,7 @@ import CellsInfo from './CellsInfo';
 import UndoRedoContainer from './UndoRedo';
 import initialSetup from '../utils/startup';
 import drawHandlersProvider from '../utils/drawHandlersProvider';
+import SelectTemplateContainer from './SelectTemplate';
 
 export default class App extends React.Component {
   constructor() {
@@ -113,12 +115,18 @@ export default class App extends React.Component {
                       <SaveDrawingContainer />
                     </div>
                   </div>
+                  <div className="app__reset-container">
+                    {/* <ResetContainer /> */}
+                  </div>
                   <div
                     data-tooltip={helpOn ? 'Undo (CTRL+Z) Redo (CTRL+Y)' : null}
                   >
                     <UndoRedoContainer />
                   </div>
                   <div className="app__tools-wrapper grid-3">
+                    <div data-tooltip={helpOn ? '' : null}>
+                      <PencilContainer />
+                    </div>
                     <div
                       data-tooltip={
                         helpOn
@@ -163,6 +171,7 @@ export default class App extends React.Component {
                 </div>
               </div>
               <div className="app__mobile--container max-width-container">
+                {/*
                 <div className="app__mobile--group">
                   <button
                     type="button"
@@ -177,6 +186,7 @@ export default class App extends React.Component {
                     css
                   </button>
                 </div>
+                */}
                 <div className="app__mobile--group">
                   <div className="app__social-container">
                     <div
@@ -196,6 +206,7 @@ export default class App extends React.Component {
                       />
                     </div>
                     <div className="app__help-container">
+                      {/*
                       <div data-tooltip="Toggle help tooltips">
                         <button
                           type="button"
@@ -207,7 +218,9 @@ export default class App extends React.Component {
                           }}
                         />
                       </div>
+                      */}
                       <div
+                        style={{ width: '100%' }}
                         data-tooltip={helpOn ? 'Show keyboard shortcuts' : null}
                       >
                         <KeyBindings
@@ -231,25 +244,31 @@ export default class App extends React.Component {
             <div className="app__right-side">
               <div className="app__mobile--container">
                 <div className="app__mobile--group">
+                  <SelectTemplateContainer />
+                  {/*
                   <PreviewBox
                     helpOn={helpOn}
                     callback={() => {
                       this.changeModalType('preview');
                     }}
                   />
+                  */}
                   <div
                     data-tooltip={helpOn ? 'Reset the selected frame' : null}
-                    className="max-width-container-centered {"
+                    // className="max-width-container-centered {"
                   >
                     <ResetContainer />
                   </div>
+                  {/*
                   <div
                     data-tooltip={helpOn ? 'Number of columns and rows' : null}
                     className="max-width-container-centered {"
                   >
                     <DimensionsContainer />
                   </div>
+                  */}
                 </div>
+                {/*
                 <div className="app__mobile--group max-width-container-centered {">
                   <div data-tooltip={helpOn ? 'Size of one tile in px' : null}>
                     <CellSizeContainer />
@@ -263,6 +282,7 @@ export default class App extends React.Component {
                     <CellsInfo />
                   </div>
                 </div>
+                */}
               </div>
             </div>
           </div>

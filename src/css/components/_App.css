@@ -19,7 +19,8 @@
   }
 
   .app__load-save-container {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
+    margin-bottom: 0.6em;
 
     .app__load-button {
       @mixin button gray;
@@ -31,6 +32,10 @@
     > button {
       lost-column: 1/2 0 0.5em;
     }
+  }
+
+  .app__reset-container {
+    margin-bottom: 2em;
   }
 
   .app__social-container {

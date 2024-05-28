@@ -1,0 +1,7 @@
+.pencil {
+  @mixin icon pencil;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

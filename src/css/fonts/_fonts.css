@@ -37,65 +37,69 @@
   }
 }
 
-@define-extend twitter {
+@define-extend pencil {
   content: '\61';
 }
-@define-extend keybindings {
+
+@define-extend twitter {
   content: '\62';
 }
-@define-extend play {
+@define-extend keybindings {
   content: '\63';
 }
-@define-extend duplicate {
+@define-extend play {
   content: '\64';
 }
-@define-extend eraser {
+@define-extend duplicate {
   content: '\65';
 }
-@define-extend pause {
+@define-extend eraser {
   content: '\66';
 }
-@define-extend screen-full {
+@define-extend pause {
   content: '\67';
 }
-@define-extend paint-brush {
+@define-extend screen-full {
   content: '\68';
 }
-@define-extend move {
+@define-extend paint-brush {
   content: '\69';
 }
-@define-extend screen-normal {
+@define-extend move {
   content: '\6a';
 }
-@define-extend frames {
+@define-extend screen-normal {
   content: '\6b';
 }
-@define-extend columns {
+@define-extend frames {
   content: '\6c';
 }
-@define-extend rows {
+@define-extend columns {
   content: '\6d';
 }
-@define-extend bucket {
+@define-extend rows {
   content: '\6e';
 }
-@define-extend eyedropper {
+@define-extend bucket {
   content: '\6f';
 }
-@define-extend undo {
+@define-extend eyedropper {
   content: '\70';
 }
-@define-extend redo {
+@define-extend undo {
   content: '\71';
 }
-@define-extend download {
+@define-extend redo {
   content: '\72';
 }
-@define-extend help {
+@define-extend download {
   content: '\73';
 }
-@define-extend trash {
+@define-extend help {
   content: '\74';
+}
+@define-extend trash {
+  content: '\75';
 }
 
 .icon-help {

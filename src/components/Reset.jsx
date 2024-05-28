@@ -12,8 +12,5 @@ const mapDispatchToProps = dispatch => ({
   resetGridDispatch: () => dispatch(resetGrid())
 });
 
-const ResetContainer = connect(
-  null,
-  mapDispatchToProps
-)(Reset);
+const ResetContainer = connect(null, mapDispatchToProps)(Reset);
 export default ResetContainer;

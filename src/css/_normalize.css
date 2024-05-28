@@ -293,6 +293,7 @@ input {
 button,
 select {
   /* 1 */
+  cursor: pointer;
   text-transform: none;
 }
 
