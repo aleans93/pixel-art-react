@@ -1,12 +1,26 @@
 import React from 'react';
 
-const Picker = ({ type, value, action, min = 1, max = 0 }) => {
+const Picker = ({ type, value, setValue, action, min = 1, max = 0 }) => {
   const pickerType = `picker__${type}`;
   return (
     <div className="picker">
       <label className={pickerType} htmlFor={pickerType}>
         <div className="picker__container" id={pickerType}>
-          <div className="picker__value">{value}</div>
+          {/*<div className="picker__value">{value}</div>*/}
+          <input
+            min={1}
+            type="number"
+            value={value}
+            onChange={e => {
+              if (e?.target?.value && parseInt(e?.target?.value)) {
+                let newValue = parseInt(e.target.value);
+                if (newValue < 1) {
+                  newValue = 1;
+                }
+                setValue(newValue);
+              }
+            }}
+          />
           <div className="picker__buttons">
             <button
               type="button"

@@ -1,24 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { resetGrid } from '../store/actions/actionCreators';
+import bracelets from '../assets/bracelets.png';
+import earrings from '../assets/earrings.png';
+import necklace from '../assets/necklace.png';
+import loadFromTemplate from '../utils/loadFromTemplate';
 
-const SelectTemplate = ({ resetGridDispatch }) => (
+const SelectTemplate = ({ dispatch }) => (
   <div className="select-template">
     <div className="title">Select template</div>
     <div className="buttons">
-      <button type="button">
+      <button type="button" onClick={() => loadFromTemplate(1, dispatch)}>
         <div data-tooltip="Bracelets">
-          <img src="/img/bracelets.png" />
+          <img src={bracelets} />
         </div>
       </button>
-      <button type="button">
+      <button type="button" onClick={() => loadFromTemplate(2, dispatch)}>
         <div data-tooltip="Earrings">
-          <img src="/img/earrings.png" />
+          <img src={earrings} />
         </div>
       </button>
-      <button type="button">
+      <button type="button" onClick={() => loadFromTemplate(3, dispatch)}>
         <div data-tooltip="Necklace">
-          <img src="/img/necklace.png" />
+          <img src={necklace} />
         </div>
       </button>
     </div>

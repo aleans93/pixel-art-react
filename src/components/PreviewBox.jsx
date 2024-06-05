@@ -4,7 +4,7 @@ import Preview from './Preview';
 
 const PreviewBox = props => {
   const [animate, setAnimate] = useState(false);
-  const [isNormalSize, setNormalSize] = useState(true);
+  const [isNormalSize, setNormalSize] = useState(false);
   const frames = useSelector(state => state.present.get('frames'));
   const duration = useSelector(state => state.present.get('duration'));
   const frameList = frames.get('list');
@@ -21,6 +21,7 @@ const PreviewBox = props => {
 
   return (
     <div className="preview-box">
+      <div className="title">Preview</div>
       <div className="buttons">
         <div data-tooltip={animTooltip}>
           <button
@@ -30,6 +31,7 @@ const PreviewBox = props => {
             aria-label="Animation control"
           />
         </div>
+        {/*
         <div data-tooltip={zoomTooltip}>
           <button
             type="button"
@@ -40,6 +42,7 @@ const PreviewBox = props => {
             }}
           />
         </div>
+        */}
         <div data-tooltip={helpOn ? 'Show a preview of your project' : null}>
           <button
             type="button"

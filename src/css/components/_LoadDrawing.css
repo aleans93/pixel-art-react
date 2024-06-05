@@ -40,7 +40,8 @@
         color: white;
         top: 0;
         right: 0;
-        cursor: no-drop;
+        /* cursor: no-drop; */
+        cursor: pointer;
         padding: 0.1em;
         background-color: $color-mineShaft;
         border: 2px solid black;

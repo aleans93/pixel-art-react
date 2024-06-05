@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import breakpoints from '../../utils/breakpoints';
 import Picker from '../Picker';
@@ -81,6 +81,10 @@ const ImageSetupSection = ({
     setPixelSize
   );
 
+  useEffect(() => {
+    console.log('frameCount', frameCount);
+  }, [frameCount]);
+
   return (
     <LoadSetup>
       <PickerWrapper>
@@ -93,6 +97,7 @@ const ImageSetupSection = ({
         <Picker
           type="frame-count"
           value={frameCount}
+          setValue={setFrameCount}
           action={framePickerAction}
         />
       </PickerWrapper>
@@ -106,6 +111,7 @@ const ImageSetupSection = ({
         <Picker
           type="pixel-size"
           value={pixelSize}
+          setValue={setPixelSize}
           action={pixelSizePickerAction}
         />
       </PickerWrapper>

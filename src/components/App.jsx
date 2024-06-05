@@ -244,31 +244,32 @@ export default class App extends React.Component {
             <div className="app__right-side">
               <div className="app__mobile--container">
                 <div className="app__mobile--group">
-                  <SelectTemplateContainer />
-                  {/*
+                  <SelectTemplateContainer dispatch={this.props.dispatch} />
+
+                  <br />
+
                   <PreviewBox
                     helpOn={helpOn}
                     callback={() => {
                       this.changeModalType('preview');
                     }}
                   />
-                  */}
+
                   <div
                     data-tooltip={helpOn ? 'Reset the selected frame' : null}
-                    // className="max-width-container-centered {"
+                    className="max-width-container-centered {"
                   >
                     <ResetContainer />
                   </div>
-                  {/*
+
                   <div
                     data-tooltip={helpOn ? 'Number of columns and rows' : null}
                     className="max-width-container-centered {"
                   >
                     <DimensionsContainer />
                   </div>
-                  */}
                 </div>
-                {/*
+
                 <div className="app__mobile--group max-width-container-centered {">
                   <div data-tooltip={helpOn ? 'Size of one tile in px' : null}>
                     <CellSizeContainer />
@@ -282,7 +283,6 @@ export default class App extends React.Component {
                     <CellsInfo />
                   </div>
                 </div>
-                */}
               </div>
             </div>
           </div>

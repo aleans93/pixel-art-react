@@ -1,7 +1,14 @@
 .preview-box {
+  & .title {
+    color: #bbb;
+    margin-bottom: 0.6em;
+  }
+
   & .buttons {
     @mixin flex-row-center;
     margin-bottom: 0.5rem;
+    justify-content: flex-start;
+
     div {
       padding-left: 0.2em;
     }

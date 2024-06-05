@@ -48,7 +48,8 @@
     opacity: 1;
 
     .delete {
-      cursor: no-drop;
+      /* cursor: no-drop; */
+      cursor: pointer;
     }
 
     .duplicate {
