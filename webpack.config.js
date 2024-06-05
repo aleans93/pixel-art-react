@@ -41,13 +41,13 @@ module.exports = {
           name: './css/[hash].[ext]',
         },
       },
-	  {
-		test: /\.(jpe?g|png|gif|svg)$/i, 
-		loader: 'file-loader',
-		options: {
-		  name: './src/assets/[name].[ext]'
-		}
-	  }
+      {
+		    test: /\.(jpe?g|png|gif|svg)$/i, 
+		    loader: 'file-loader',
+		    options: {
+		      name: './src/assets/[name].[ext]'
+		    }
+      }
     ]
   },
   resolve: {
