@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: $color-scorpion;
+  background-color: $color-lilla;
 }
 
 *,
@@ -40,6 +40,12 @@ h2 {
 
 h3 {
   font-size: 1em;
+}
+
+a,
+a:hover,
+a:active {
+  transition: 0.3s;
 }
 
 .block {

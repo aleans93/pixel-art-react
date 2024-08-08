@@ -1,5 +1,4 @@
-$font-pixel: 'minecraftiaregular', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif;
+$font-pixel: 'ApfelGrotezk-Regular';
 $font-icons: 'WebFontIcons';
 $font-monospace: 'monospace';
 
@@ -43,3 +42,7 @@ $color-back-frames: rgba(51, 50, 50, 0.2);
 $color-primary: #a702fb;
 $color-secondary: #f0ff0a;
 $color-white: #dedede;
+
+$color-rosso: #e6191e;
+$color-lilla: #d1c5ff;
+$color-giallo: #ccff00;

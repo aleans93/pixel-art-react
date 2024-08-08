@@ -13,7 +13,7 @@ const CellSize = props => {
   return (
     <div className="cell-size">
       <label htmlFor="cell-size__input">
-        Pixel Size
+        pixel size
         <input
           type="number"
           value={cellSize}

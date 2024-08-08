@@ -10,7 +10,7 @@ const Duration = ({ actions, duration }) => {
   return (
     <div className="duration">
       <label htmlFor="duration__input">
-        Duration
+        duration
         <input
           type="number"
           value={duration}

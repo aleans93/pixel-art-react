@@ -103,7 +103,7 @@ const ImageSetupSection = ({
       </PickerWrapper>
       <PickerWrapper>
         <PickerTitle>
-          Pixel Size
+          pixel size
           <span data-tooltip="Tweak this value to get a pixel perfect frame size">
             <PickerInfoIcon className="icon-help" />
           </span>

@@ -1,7 +1,9 @@
 .preview-box {
   & .title {
-    color: #bbb;
+    color: #000;
     margin-bottom: 0.6em;
+    text-transform: uppercase;
+    font-family: 'ApfelGrotezk-Fett';
   }
 
   & .buttons {
