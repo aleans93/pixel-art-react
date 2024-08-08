@@ -1,7 +1,7 @@
 import * as actionCreators from '../store/actions/actionCreators';
-import { jsonBracelets } from '../../examples/bracelets/json-bracelets';
-import { jsonEarrings } from '../../examples/earrings/json-earrings';
-import { jsonNecklace } from '../../examples/necklace/json-necklace';
+import { jsonBracelets } from '../examples/bracelets/json-bracelets';
+import { jsonEarrings } from '../examples/earrings/json-earrings';
+import { jsonNecklace } from '../examples/necklace/json-necklace';
 
 const loadFromTemplate = (template, dispatch) => {
   dispatch(actionCreators.hideSpinner());

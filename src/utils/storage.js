@@ -1,4 +1,4 @@
-import { exampleCat } from '../../examples/import-export/json-cat';
+import { exampleCat } from '../examples/import-export/json-cat';
 
 const STORAGE_KEY = 'pixelart-react-v3-0-0';
 
