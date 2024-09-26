@@ -1,0 +1,23 @@
+.under-construction {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d1c5ff;
+  height: calc(100vh - 68px - 2em);
+}
+
+.under-construction p {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 400;
+  color: #272727;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .under-construction {
+    height: calc(100vh - 107px - 2em);
+  }
+}

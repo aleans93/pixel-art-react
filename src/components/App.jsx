@@ -27,6 +27,7 @@ import UndoRedoContainer from './UndoRedo';
 import initialSetup from '../utils/startup';
 import drawHandlersProvider from '../utils/drawHandlersProvider';
 import SelectTemplateContainer from './SelectTemplate';
+import UnderConstruction from './UnderConstruction';
 
 export default class App extends React.Component {
   constructor() {
@@ -64,6 +65,14 @@ export default class App extends React.Component {
 
   render() {
     const { helpOn, modalType, modalOpen } = this.state;
+
+    const currentHostname = window.location.hostname;
+
+    // if (currentHostname === 'localhost') {
+    if (currentHostname === 'crea.cimusashop.com') {
+      return <UnderConstruction />;
+    }
+
     return (
       <div
         className="app__main"
